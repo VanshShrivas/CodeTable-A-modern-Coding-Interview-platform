@@ -11,6 +11,8 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/mock" element={<Mock />} />
         <Route path="/live" element={<Live />} />
+        <Route path="/about" element={<Landing />} />
+        <Route path="/contactus" element={<Landing />} />
       </Routes>
     </Router>
   );

@@ -15,9 +15,9 @@ const Navbar = () => {
 
       {/* Desktop Links */}
       <ul className="hidden md:flex gap-6 font-medium text-white">
-        <li className="hover:text-purple-200 cursor-pointer hover:underline transition-colors duration-200">Home</li>
-        <li className="hover:text-purple-200 cursor-pointer hover:underline transition-colors duration-200">About</li>
-        <li className="hover:text-purple-200 cursor-pointer hover:underline transition-colors duration-200">Contact Us</li>
+        <a href="/" className="hover:text-purple-200 cursor-pointer hover:underline transition-colors duration-200">Home</a>
+        <a href="/about" className="hover:text-purple-200 cursor-pointer hover:underline transition-colors duration-200">About</a>
+        <a href="/contactus" className="hover:text-purple-200 cursor-pointer hover:underline transition-colors duration-200">Contact Us</a>
       </ul>
 
       {/* Hamburger button */}
@@ -41,16 +41,16 @@ const Navbar = () => {
 
       {/* Mobile Links */}
       {isOpen && (
-        <ul className="absolute top-20 left-0 w-full flex flex-col items-center gap-4 py-4 md:hidden">
-          <li className="w-11/12 text-center text-white hover:text-purple-400 cursor-pointer transition-colors duration-200 border border-gray-400 rounded-lg py-2 bg-black/70 backdrop-blur-sm">
+        <ul className="absolute top-20 left-0 w-full flex flex-col items-center py-4 md:hidden">
+          <a href="/" className="w-11/12 text-center text-white hover:text-purple-400 cursor-pointer transition-colors duration-200 border border-gray-400 rounded-lg py-2 bg-black/70 backdrop-blur-sm">
             Home
-          </li>
-          <li className="w-11/12 text-center text-white hover:text-purple-400 cursor-pointer transition-colors duration-200 border border-gray-400 rounded-lg py-2 bg-black/70 backdrop-blur-sm">
+          </a>
+          <a href="/about" className="w-11/12 text-center text-white hover:text-purple-400 cursor-pointer transition-colors duration-200 border border-gray-400 rounded-lg py-2 bg-black/70 backdrop-blur-sm">
             About
-          </li>
-          <li className="w-11/12 text-center text-white hover:text-purple-400 cursor-pointer transition-colors duration-200 border border-gray-400 rounded-lg py-2 bg-black/70 backdrop-blur-sm">
+          </a>
+          <a href="/contactus" className="w-11/12 text-center text-white hover:text-purple-400 cursor-pointer transition-colors duration-200 border border-gray-400 rounded-lg py-2 bg-black/70 backdrop-blur-sm">
             Contact Us
-          </li>
+          </a>
         </ul>
       )}
     </nav>
